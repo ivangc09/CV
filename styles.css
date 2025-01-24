@@ -1,0 +1,231 @@
+body{
+    margin:0;
+    overflow-x: hidden;
+}
+
+:root{
+    --color-principal: #191254; /* Uso de hexadecimal */
+}
+
+hr {
+    border: none;
+    height: 15px;
+    background-color: #333;
+    margin: 0px 0;
+}
+
+.habilidades-experiencia{
+    background-color: beige;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    gap: 30px;
+    padding: 20px;
+}
+
+.titulo-exp{
+    grid-column: 1/2;
+    grid-row : 1;
+    text-align: center;
+}
+
+.spotify{
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.experiencia-laboral{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+.x{
+    grid-column: 2;
+    grid-row: 3;
+}
+
+/* Herencias de estilo*/
+
+.experiencia-laboral img{
+    width: 100px;
+    height: 100px;
+    grid-row: 2;
+}
+
+
+.foto-fondo{
+   
+    background-image: url(./imgs/fondo-inicio.jpg);
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.foto-fondo p{
+    color: white; /* Cambio de color de texto */
+}
+
+/* Cambio de tamaño de fuente */
+.letra-inicio{
+    font-size: 42px;
+}
+.letra-contenido{
+    font-size: 30px;
+}
+.letra-subcontenido{
+    font-size: 25px;
+}
+.letra-experiencia{
+    font-size: 22px;
+}
+
+/* Google Fonts */
+
+.lexend-giga-google-font {
+  font-family: "Lexend Giga", serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  
+}
+
+.info{
+    background-color: beige; /* Cambio de color de fondo a un div*/
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+}
+
+.info img{
+    width: 550px;
+    height: 450px; /* Cambio de tamaño de la imagen */
+    border-radius: 50%;
+    border: 5px solid var(--color-principal); /* Uso de variable y uso de bordes */
+}
+
+.lenguajes-progra{
+    background-color: coral;
+    width: 100vw;
+    display:flex;
+    justify-content: center;
+    padding: 30px;
+    gap: 10rem;
+}
+
+.lenguajes-progra img{
+    width:200px;
+}
+.redes-sociales{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+}
+
+.redes-sociales li{
+    display: inline-block;
+}
+
+.redes-sociales a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 24px;
+    display: flex;
+    align-items: right;
+    justify-content: center;
+}
+
+.redes-sociales img{
+    width: 30px;
+    height: 30px;
+
+}
+
+.idiomas img{
+    width: 50px;
+    height: 50px;
+}
+
+.idiomas-intereses{
+    background-color: #191254;
+    color: white;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.Intereses-prof{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+    padding: 50px;
+}
+
+.Web,
+.Ciberseguridad{
+    grid-column: 1;
+    align-self: center;
+    text-align: center;
+}
+
+.Intereses-prof img{
+    height: 100px;
+}
+
+.idiomas{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 50px;
+   
+}
+
+.English,
+.Spanish,
+.German,
+.French {
+  grid-column: 1;
+  align-self: center;
+  text-align: center;
+}
+
+.titulo-idiomas{
+    grid-column: 1;
+    grid-row: 1/2;
+    text-align: center;
+    align-self: center;
+}
+
+.experiencia-proyectos{
+    display: flex;
+    flex-direction: column;
+}
+
+.recomendaciones-texto{
+    background-color: beige;
+}
+
+.recomendaciones{
+    background-color: beige;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 30px;
+}
+
+.recomendaciones span{
+    align-items: center;
+}
+
+.recomendaciones p{
+    grid-row: 2;
+}
